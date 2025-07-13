@@ -10,7 +10,7 @@ WITH ga4_data AS (
     COUNTIF(event_name = 'begin_checkout') AS total_begin_checkout,
     COUNTIF(event_name = 'add_to_cart') AS total_add_to_cart
   FROM
-    `joseangelperezcom.analytics_387636959.events_*`
+    `joseangexxxxxx.analytics_3xxxxxxx9.events_*`
   WHERE
     _TABLE_SUFFIX BETWEEN FORMAT_DATE('%Y%m%d', DATE_SUB(CURRENT_DATE(), INTERVAL 1 YEAR)) 
                      AND FORMAT_DATE('%Y%m%d', DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY))
@@ -33,7 +33,7 @@ gsc_data AS (
     search_type,
     device,
   FROM
-    `joseangelperezcom.searchconsole.searchdata_url_impression`
+    `joseangexxxxxxxxom.searchconsole.searchdata_url_impression`
   WHERE
     data_date BETWEEN DATE_TRUNC(CURRENT_DATE(), YEAR) 
                   AND DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY)
